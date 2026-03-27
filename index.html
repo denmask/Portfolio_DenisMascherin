@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denis Mascherin — Front-End Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <button id="scroll-top" aria-label="Torna su">↑</button>
+
+  <nav id="main-nav">
+    <a href="#hero" class="nav-logo">DM<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Esperienza</a></li>
+      <li><a href="#education">Formazione</a></li>
+      <li><a href="#projects">Progetti</a></li>
+      <li><a href="#contact" class="nav-cta">Contattami</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow">Disponibile per opportunità lavorative</div>
+
+        <h1 class="hero-title">
+          <span class="line">Denis</span>
+          <span class="line"><span class="accent-word">Mascherin</span></span>
+          <span class="line"><span class="stroke-word">Developer</span></span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Studente ITS Front-End Developer presso la Fondazione ITS Academy Alto Adriatico.
+          Creo interfacce moderne, funzionali e visivamente impeccabili.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Parliamo →</a>
+          <a href="#experience" class="btn-secondary">Vedi il mio percorso <span class="arrow">↓</span></a>
+        </div>
+
+        <div class="hero-stat-bar">
+          <div class="hero-stat">
+            <strong>21</strong>
+            <span>Anni</span>
+          </div>
+          <div class="hero-stat">
+            <strong>3+</strong>
+            <span>Esperienze</span>
+          </div>
+          <div class="hero-stat">
+            <strong>10+</strong>
+            <span>Tecnologie</span>
+          </div>
+          <div class="hero-stat">
+            <strong>B1</strong>
+            <span>Inglese</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-card">
+        <img src="denis_mascherin.jpg" alt="Denis Mascherin" />
+        <div class="photo-badge">ITS Front-End <span>Developer</span></div>
+        <div class="photo-tag">Open to Work</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-inner">
+      <span class="section-label reveal">Competenze</span>
+      <h2 class="section-title reveal">Le mie tecnologie</h2>
+      <p class="section-sub reveal">Stack moderno orientato al front-end, con esperienza in tool professionali e ambienti di sviluppo reali.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h4>Front-End Core</h4>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">HTML5</span>
+            <span class="skill-tag highlight">CSS3</span>
+            <span class="skill-tag highlight">JavaScript</span>
+            <span class="skill-tag">UX/UI Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚛️</div>
+          <h4>Framework & Librerie</h4>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Blazor</span>
+            <span class="skill-tag">Flutter</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h4>Backend & Database</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MSSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h4>Tool & Workflow</h4>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">Figma</span>
+            <span class="skill-tag">Google Suite</span>
+            <span class="skill-tag">Testing</span>
+            <span class="skill-tag">IA Integration</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📄</div>
+          <h4>Office & Produttività</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Word</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">PowerPoint</span>
+            <span class="skill-tag">Lettere commerciali</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔐</div>
+          <h4>Certificazioni</h4>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">GDPR</span>
+            <span class="skill-tag">Privacy</span>
+            <span class="skill-tag">Sicurezza dati</span>
+            <span class="skill-tag">Patente B</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tech-strip">
+        <div class="tech-strip-inner" id="techStrip"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <span class="section-label reveal">Esperienze</span>
+    <h2 class="section-title reveal">Dove ho lavorato</h2>
+    <p class="section-sub reveal">Dal settore della ristorazione alla sicurezza, fino allo sviluppo web — ogni esperienza ha contribuito alla mia professionalità.</p>
+
+    <div class="exp-grid">
+
+      <article class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="exp-date">Apr 2026 → in corso</div>
+          <div class="exp-company">Polo Tecnologico Alto Adriatico</div>
+          <div class="exp-type">Stage Formativo</div>
+        </div>
+        <div class="exp-content">
+          <h3>Stage ITS – Anno 2</h3>
+          <p>Sviluppo e rifacimento di un sito web Burgo Distribuzione utilizzando <strong>React</strong>, con focus su componentizzazione, performance e design responsivo.</p>
+        </div>
+      </article>
+
+      <article class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="exp-date">Giu → Ago 2025</div>
+          <div class="exp-company">Valle Center & CCIAA</div>
+          <div class="exp-type">Stage Formativo</div>
+        </div>
+        <div class="exp-content">
+          <h3>Stage ITS – Anno 1</h3>
+          <ul>
+            <li><strong>Valle Center (Pordenone & Udine):</strong> Sviluppo e rifacimento sito web da zero.</li>
+            <li><strong>CCIAA Pordenone-Udine:</strong> Mansioni amministrative d'ufficio, gestione documenti.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="exp-date">Feb 2024 → ora</div>
+          <div class="exp-company">G.S.A. – Tavagnacco</div>
+          <div class="exp-type">Portierato</div>
+        </div>
+        <div class="exp-content">
+          <h3>Addetto alla sorveglianza</h3>
+          <p>Gestione della vigilanza non armata degli edifici, fornendo ai clienti un servizio affidabile e sicuro. Sviluppo di capacità relazionali e problem solving in contesti professionali.</p>
+        </div>
+      </article>
+
+      <article class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="exp-date">2023 – 2024</div>
+          <div class="exp-company">Burger King Italia – Pordenone</div>
+          <div class="exp-type">Ristorazione</div>
+        </div>
+        <div class="exp-content">
+          <h3>Addetto alla ristorazione</h3>
+          <ul>
+            <li>Ottima capacità di lavoro in team, gestione clienti e cassa.</li>
+            <li>Ambiente dinamico: calma e organizzazione anche sotto pressione.</li>
+            <li>Rispetto degli standard di qualità e sicurezza alimentare.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-inner">
+      <span class="section-label reveal">Formazione</span>
+      <h2 class="section-title reveal">Il mio percorso</h2>
+      <p class="section-sub reveal">Una formazione tecnica specializzata affiancata da un background economico e linguistico.</p>
+
+      <div class="edu-cards">
+
+        <article class="edu-card reveal">
+          <div class="edu-number">01</div>
+          <div class="edu-icon">🎓</div>
+          <h3>Diploma di Tecnico Superiore Front-End Developer</h3>
+          <div class="edu-school">Fondazione ITS Academy Alto Adriatico</div>
+          <div class="edu-period">Ottobre 2024 – Giugno 2026</div>
+          <p>Corso biennale specializzato nello sviluppo front-end: UX/UI design, HTML5, CSS3, JavaScript, React, testing e integrazione IA.</p>
+          <span class="edu-badge">Livello 5EQF</span>
+        </article>
+
+        <article class="edu-card reveal">
+          <div class="edu-number">02</div>
+          <div class="edu-icon">📚</div>
+          <h3>Perito Economico Turistico</h3>
+          <div class="edu-school">I.S.I.S G.Marchesini – Sacile e Brugnera</div>
+          <div class="edu-period">Settembre 2018 – Giugno 2023</div>
+          <p>Percorso quinquennale con focus su economia, lingue straniere e gestione del business. Voto finale: <strong>64/100</strong>.</p>
+          <span class="edu-badge">Diploma di Stato</span>
+        </article>
+
+        <article class="edu-card reveal">
+          <div class="edu-number">03</div>
+          <div class="edu-icon">🏛️</div>
+          <h3>Stage Formativo – PCTO</h3>
+          <div class="edu-school">Biblioteca Civica – Pordenone</div>
+          <div class="edu-period">Maggio – Giugno 2022</div>
+          <p>Attività di PCTO fuori aula presso la Biblioteca Civica di Pordenone, con esperienze pratiche di orientamento professionale.</p>
+          <span class="edu-badge">Alternanza Scuola-Lavoro</span>
+        </article>
+
+      </div>
+
+      <h3 class="lang-title reveal">Lingue</h3>
+      <div class="lang-grid">
+
+        <div class="lang-card reveal">
+          <span class="lang-flag">🇮🇹</span>
+          <div class="lang-name">Italiano</div>
+          <div class="lang-level">Lingua Madre</div>
+          <div class="lang-dots">
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot filled"></div>
+          </div>
+        </div>
+
+        <div class="lang-card reveal">
+          <span class="lang-flag">🇬🇧</span>
+          <div class="lang-name">Inglese</div>
+          <div class="lang-level">B1 – Intermedio</div>
+          <div class="lang-dots">
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot"></div>
+            <div class="lang-dot"></div>
+          </div>
+        </div>
+
+        <div class="lang-card reveal">
+          <span class="lang-flag">🇪🇸</span>
+          <div class="lang-name">Spagnolo</div>
+          <div class="lang-level">B1 – Intermedio</div>
+          <div class="lang-dots">
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot"></div>
+            <div class="lang-dot"></div>
+          </div>
+        </div>
+
+        <div class="lang-card reveal">
+          <span class="lang-flag">🇩🇪</span>
+          <div class="lang-name">Tedesco</div>
+          <div class="lang-level">A2 – Elementare</div>
+          <div class="lang-dots">
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot filled"></div>
+            <div class="lang-dot"></div>
+            <div class="lang-dot"></div>
+            <div class="lang-dot"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <span class="section-label reveal">Progetti</span>
+    <h2 class="section-title reveal">Cosa ho costruito</h2>
+    <p class="section-sub reveal">Alcuni dei progetti realizzati durante il corso ITS e nelle esperienze di stage — da siti web a interfacce React.</p>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-thumb" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+          <div class="project-thumb-inner">🌐</div>
+        </div>
+        <div class="project-body">
+          <div class="project-label">Stage ITS – Anno 2</div>
+          <h3>Burgo Distribuzione – Sito Web</h3>
+          <p>Rifacimento completo del sito web aziendale con React, architettura componenti modulare e design responsivo.</p>
+          <h4>Progetto Economico React</h4>
+          <p>Portale interattivo per gestione e visualizzazione di dati economico-finanziari: stesura Conto economico e Stato Patrimoniale, Preventivo e Budget.</em></p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb" style="background: linear-gradient(135deg, #0f3443, #136a8a);">
+          <div class="project-thumb-inner">🏢</div>
+        </div>
+        <div class="project-body">
+          <div class="project-label">Stage ITS – Anno 1</div>
+          <h3>Valle Center – Sito Web</h3>
+          <p>Sviluppo e rifacimento del sito web da zero per Valle Center con sedi a Pordenone e Udine.</p>
+          <div class="project-tech">
+            <h4>CCIAA Pordenone-Udine</h4>
+            <p>Mansioni amministrative d'ufficio</p>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-thumb" style="background: linear-gradient(135deg, #2d1b69, #11998e);">
+          <div class="project-thumb-inner">⚽</div>
+        </div>
+        <div class="project-body">
+          <div class="project-label">Progetto Personale</div>
+          <h3>My Preferences App</h3>
+          <p>Portale interattivo per la gestione di dati delle mie cose preferite. </p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>CSS</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="softskills">
+    <div class="section-inner">
+      <span class="section-label reveal">Chi sono</span>
+      <h2 class="section-title reveal">Soft Skills</h2>
+
+      <div class="soft-grid">
+
+        <div class="soft-item reveal">
+          <div class="soft-ico">🤝</div>
+          <div class="soft-text">
+            <h4>Empatia & Ascolto</h4>
+            <p>Ascolto attentamente colleghi e clienti per trovare soluzioni che soddisfino tutte le parti.</p>
+          </div>
+        </div>
+
+        <div class="soft-item reveal">
+          <div class="soft-ico">🎯</div>
+          <div class="soft-text">
+            <h4>Problem Solving</h4>
+            <p>Approccio analitico e metodico, capace di trovare soluzioni efficaci anche sotto pressione.</p>
+          </div>
+        </div>
+
+        <div class="soft-item reveal">
+          <div class="soft-ico">👤</div>
+          <div class="soft-text">
+            <h4>Autonomia</h4>
+            <p>Preferisco lavorare in modo indipendente mantenendo sempre alta la qualità del lavoro.</p>
+          </div>
+        </div>
+
+        <div class="soft-item reveal">
+          <div class="soft-ico">🔍</div>
+          <div class="soft-text">
+            <h4>Attenzione al Dettaglio</h4>
+            <p>Cura maniacale per ogni pixel, ogni riga di codice e ogni interazione dell'interfaccia.</p>
+          </div>
+        </div>
+
+        <div class="soft-item reveal">
+          <div class="soft-ico">📈</div>
+          <div class="soft-text">
+            <h4>Apprendimento Continuo</h4>
+            <p>Sempre aggiornato sulle ultime tecnologie front-end e tendenze di design.</p>
+          </div>
+        </div>
+
+        <div class="soft-item reveal">
+          <div class="soft-ico">💡</div>
+          <div class="soft-text">
+            <h4>Creatività</h4>
+            <p>Unisco pensiero creativo e logica tecnica per costruire interfacce memorabili.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-card reveal">
+      <h2>Lavoriamo insieme 🚀</h2>
+      <p>Sono un giovane sviluppatore front-end pronto a portare entusiasmo, competenza e crescita costante nel tuo team. Scrivimi!</p>
+      <div class="contact-links">
+        <a href="mailto:denis.mascherin.24@stud.its.saltadriatica.it" class="contact-link white">✉️ Scrivimi una mail</a>
+        <a href="tel:+393807441497" class="contact-link">📞 +39 380 744 1497</a>
+        <a href="https://saltadriatica.it" class="contact-link" target="_blank" rel="noopener">🏫 ITS Alto Adriatico</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Denis Mascherin · Pordenone, Italy · Sviluppato con ❤️ e HTML/CSS/JS puro</p>
+    <p>GDPR: autorizzazione al trattamento dei dati personali ai sensi dell'art.13 D.lgs 196/30 e art.13 GDPR (UE 2016/679)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
