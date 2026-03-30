@@ -52,18 +52,33 @@ scrollBtn.addEventListener('click', function() {
 
 const revealElements = document.querySelectorAll('.reveal');
 
-const observer = new IntersectionObserver(function(entries) {
-  entries.forEach(function(entry) {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target); 
+// Step 1: mark elements as animation-ready (adds opacity:0 via CSS)
+// We do this AFTER a tiny delay so the page content is visible first
+setTimeout(function() {
+  revealElements.forEach(function(el) {
+    const rect = el.getBoundingClientRect();
+    // Only animate elements NOT already in viewport on load
+    if (rect.top >= window.innerHeight * 0.9) {
+      el.classList.add('animate-ready');
     }
   });
-}, { threshold: 0.12 });
 
-revealElements.forEach(function(el) {
-  observer.observe(el);
-});
+  // Step 2: observe and reveal on scroll
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+
+  revealElements.forEach(function(el) {
+    if (el.classList.contains('animate-ready')) {
+      observer.observe(el);
+    }
+  });
+}, 100);
 
 const techs = [
   'HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js',
@@ -84,3 +99,33 @@ strip.innerHTML = doubled
 document.querySelectorAll('.hero-title .line').forEach(function(line, index) {
   line.style.animation = 'fadeUp 0.8s ' + (0.05 * index) + 's cubic-bezier(0.16, 1, 0.3, 1) both';
 });
+// vCard download for phone button
+const vcardBtn = document.getElementById('vcardBtn');
+if (vcardBtn) {
+  vcardBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const vcard = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'FN:Denis Mascherin',
+      'N:Mascherin;Denis;;;',
+      'TEL;TYPE=CELL:+393807441497',
+      'EMAIL:denis.mascherin@gmail.com',
+      'TITLE:Front-End Developer',
+      'ORG:ITS Academy Alto Adriatico',
+      'URL:https://www.itsaltoadriatico.it',
+      'ADR;TYPE=HOME:;;Pordenone;Friuli-Venezia Giulia;;Italy',
+      'END:VCARD'
+    ].join('\r\n');
+
+    const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Denis_Mascherin.vcf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+}
